@@ -24,7 +24,10 @@ describe('sayHello', function() {
     it("should never return 'undefined' when called", function () {
         expect(sayHello()).not.toBe(undefined);
     });
+    it('should return a string when called', function () {
+        expect(typeof sayHello()).toBe("string");
+    });
+    it('should return the string "" when called', function () {
+        expect(typeof sayHello()).toBe("string");
+    });
 });
-
-//Step 2: Run all the tests.
-// At this point, we're expecting and hoping for a single, red failing test that we just now authored.
